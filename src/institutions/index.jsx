@@ -70,6 +70,7 @@ const _whatToRender = ({ filings, filingPeriod, institutions, submission }) => {
           institution={institution}
           submission={_setSubmission(submission, filingObj)}
           submissions={filingObj.submissions}
+          year={filingPeriod}
         />
       )
     }

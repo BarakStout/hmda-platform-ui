@@ -12,8 +12,8 @@ import {
 const createUserManager = dispatch => {
   if (!dispatch) return new UserManager()
 
-  const keycloak = 'https://hmda4.demo.cfpb.gov/auth' // window.HMDA_ENV.KEYCLOAK_URL
-  const app = 'http://localhost:8070' //window.HMDA_ENV.FILING_APP_URL
+  const keycloak =  window.HMDA_ENV.KEYCLOAK_URL
+  const app = window.HMDA_ENV.FILING_APP_URL
 
   const manager = new UserManager({
     authority: keycloak,

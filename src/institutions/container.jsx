@@ -22,6 +22,7 @@ export class InstitutionContainer extends Component {
     this.props.dispatch(fetchEachInstitution(institutions))
 
     this.props.dispatch(receiveInstitutions())
+
   }
 
   render() {
